@@ -28,7 +28,7 @@ process.stdin.on('readable', ()=>{
   let variable = process.stdin.read(); 
   const variableParse= Number(variable)
   if(variableParse !== NaN){
-    return drawHourglass(Number(variable))
+    return drawHourglass(variableParse)
   }
   
 })
